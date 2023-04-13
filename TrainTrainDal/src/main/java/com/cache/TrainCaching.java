@@ -7,7 +7,7 @@ import java.util.List;
 public class TrainCaching implements ITrainCaching {
     List<SeatEntity> seats = new ArrayList<>();
     @Override
-    public void Clear() throws InterruptedException {
+    public void clear() throws InterruptedException {
         seats.clear();
         Thread.sleep(500);
     }
